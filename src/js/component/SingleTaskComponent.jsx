@@ -1,10 +1,10 @@
 import React from 'react'
 
-export const SingleTaskComponent = ({ task }) => {
+export const SingleTaskComponent = ({ task, onDelete }) => {
 
     return (
         <div>
-            <li className="list-group-item">{task}</li>
+            <li onClick={onDelete} className="list-group-item">{task}</li>
         </div>
     )
 }

@@ -9,6 +9,11 @@ const Home = () => {
 	const onNewTask = (newTask) => {
 		setTasks([...tasks, newTask])
 	}
+
+	const onDelete = ({ target }) => {
+		setTasks(tasks.filter(task => !task.includes(target.innerText)))
+		console.log(event.target.innerText)
+	}
 	return (
 		<div className="text-center">
 			{/* Input component */}
@@ -16,7 +21,7 @@ const Home = () => {
 			{/* End of Input component */}
 
 			{/* Taks Board Componnent */}
-			<TaskBoardComponent tasks={tasks} />
+			<TaskBoardComponent tasks={tasks} onDelete={onDelete} />
 			{/* End of Taks Board Componnent */}
 
 

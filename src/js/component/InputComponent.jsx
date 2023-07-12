@@ -19,7 +19,7 @@ export const InputComponent = ({ onNewTask, placeHolder }) => {
     };
 
     return (
-        <form action="" onSubmit={onSubmit}>
+        <form className="mb-5" onSubmit={onSubmit}>
             <input
                 type="text"
                 value={inputValue}

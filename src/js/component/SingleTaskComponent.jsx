@@ -8,8 +8,8 @@ export const SingleTaskComponent = ({ task, onDelete }) => {
     }
 
     return (
-        <div onMouseOver={showDelete} onMouseLeave={showDelete} className="">
-            <li onClick={onDelete} className="list-group-item">{task} {mouseOver === true && <h1>delete</h1>}</li>
-        </div>
+        <li className="p-3"
+        >{task} <i onClick={onDelete} className="fa-2x ms-5bi bi-x-circle-fill bg-lighttext-align-start mt-3 text-danger rounded p-2"></i>
+        </li>
     )
 }

@@ -15,7 +15,8 @@ const Home = () => {
 
 	}
 	return (
-		<div className="text-center">
+		<div className="d-flex flex-column align-items-center">
+			<h1 className="m-5">Simple React To Do App</h1>
 			{/* Input component */}
 			<InputComponent onNewTask={onNewTask} placeHolder="Ola que ase" />
 			{/* End of Input component */}

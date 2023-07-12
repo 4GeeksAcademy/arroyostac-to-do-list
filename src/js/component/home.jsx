@@ -10,15 +10,14 @@ const Home = () => {
 		setTasks([...tasks, newTask])
 	}
 
-	const onDelete = ({ target }) => {
-		setTasks(tasks.filter(task => !task.includes(target.innerText)))
-
+	const onDelete = (deletedTask) => {
+		setTasks(tasks.filter(task => task !== deletedTask))
 	}
 	return (
 		<div className="d-flex flex-column align-items-center">
-			<h1 className="m-5">Simple React To Do App</h1>
+			<h1 className="m-5">SIMPLE REACT TO DO APP</h1>
 			{/* Input component */}
-			<InputComponent onNewTask={onNewTask} placeHolder="Ola que ase" />
+			<InputComponent onNewTask={onNewTask} placeHolder="Enter You Task" />
 			{/* End of Input component */}
 
 			{/* Taks Board Componnent */}

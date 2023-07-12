@@ -21,6 +21,7 @@ export const InputComponent = ({ onNewTask, placeHolder }) => {
     return (
         <form className="mb-5" onSubmit={onSubmit}>
             <input
+                className="form-control p-2"
                 type="text"
                 value={inputValue}
                 onChange={onInputChange}

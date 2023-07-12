@@ -1,6 +1,10 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 
-
+body {
+    background: url('https://as2.ftcdn.net/v2/jpg/02/48/60/61/1000_F_248606152_fpZOTHuxwSeCfjaqPqmvXk5ybRgogd1B.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 li{
     list-style: none;
 }

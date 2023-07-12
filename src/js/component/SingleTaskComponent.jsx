@@ -1,7 +1,10 @@
 import React from 'react'
 
-export const SingleTaskComponent = () => {
+export const SingleTaskComponent = ({ task }) => {
+
     return (
-        <div>Single task component</div>
+        <div>
+            <li className="list-group-item">{task}</li>
+        </div>
     )
 }

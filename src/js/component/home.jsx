@@ -4,7 +4,7 @@ import { ItemsTrackerComponent } from "./ItemsTrackerComponent";
 import { TaskBoardComponent } from "./TaskBoardComponent";
 
 const Home = () => {
-	const [tasks, setTasks] = useState(['comprar', 'reir'])
+	const [tasks, setTasks] = useState(['Be Happy'])
 
 	const onNewTask = (newTask) => {
 		setTasks([...tasks, newTask])
@@ -16,14 +16,13 @@ const Home = () => {
 			{/* End of Input component */}
 
 			{/* Taks Board Componnent */}
-			<TaskBoardComponent />
+			<TaskBoardComponent tasks={tasks} />
 			{/* End of Taks Board Componnent */}
 
 
 			{/* Items Tracker Component */}
 			<ItemsTrackerComponent />
 			{/* End of Items Tracker Component */}
-			{tasks}
 		</div>
 	);
 };

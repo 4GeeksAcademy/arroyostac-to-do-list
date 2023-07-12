@@ -9,6 +9,8 @@ export const TaskBoardComponent = ({ tasks, onDelete }) => {
                 {tasks.map((task, i) => (
                     <SingleTaskComponent key={i} task={task} onDelete={onDelete} />
                 ))}
+                <li className="list-group-item">{tasks.length} tasks left</li>
+
             </ul>
 
 

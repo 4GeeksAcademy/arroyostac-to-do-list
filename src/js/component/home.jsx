@@ -12,7 +12,7 @@ const Home = () => {
 
 	const onDelete = ({ target }) => {
 		setTasks(tasks.filter(task => !task.includes(target.innerText)))
-		console.log(event.target.innerText)
+
 	}
 	return (
 		<div className="text-center">

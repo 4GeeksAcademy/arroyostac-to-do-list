@@ -25,10 +25,6 @@ const Home = () => {
 			<TaskBoardComponent tasks={tasks} onDelete={onDelete} />
 			{/* End of Taks Board Componnent */}
 
-
-			{/* Items Tracker Component */}
-			<ItemsTrackerComponent />
-			{/* End of Items Tracker Component */}
 		</div>
 	);
 };

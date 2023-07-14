@@ -7,8 +7,8 @@ export const SingleTaskComponent = ({ task, onDelete }) => {
             <div className="d-flex align-items-center">
                 {task}
             </div>
-            <div>
-                <span className="delete-btn ">  <i className="fa-2x ms-5bi bi-x-circle-fill bg-lighttext-align-start mt-3 text-danger rounded p-2"></i></span>
+            <div className="">
+                <span className="delete-btn">  <i className="fa-2x ms-5bi bi-x-circle-fill bg-light  text-danger rounded p-2"></i></span>
             </div>
         </li>
     )

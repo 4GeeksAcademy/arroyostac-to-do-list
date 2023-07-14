@@ -8,3 +8,10 @@ body {
 li{
     list-style: none;
 }
+
+span > i{
+   visibility: hidden;
+}
+li:hover span i {
+    visibility: visible;
+}
